@@ -1,0 +1,83 @@
+---Total number of customers from each region----
+
+	Select * from [dbo].[Customer Dataset]
+
+Select Region,
+	Count(CustomerID) as TotalCustomers
+	from [dbo].[Customer Dataset]
+	Group by Region
+
+----find the most popular subscription type by the number of customers---
+
+Select Top 1 subscriptionType,
+	count(CustomerID)as NumberOfCustomers
+	from[dbo].[Customer Dataset]
+	Group by SubscriptionType
+	Order by NumberOfCustomers desc
+
+---Customers who canceled their subscription within 6 months---
+
+	Select * from [dbo].[Customer Dataset]
+
+Select CustomerName,SubscriptionStart, SubscriptionEnd
+	from [dbo].[Customer Dataset]
+	Where DATEDIFF(month, SubscriptionStart, SubscriptionEnd)
+	<= 6;
+
+---calculate the average subscription duration for all customers---
+
+Select
+	AVG(DATEDIFF(month,SubscriptionStart, SubscriptionEnd)) 
+	as AverageDuration
+	from [dbo].[Customer Dataset]
+
+---find customers with subscriptions longer than 12 months---
+
+	Select * from [dbo].[Customer Dataset]
+
+Select CustomerID,SubscriptionType,SubscriptionStart, SubscriptionEnd
+	from [dbo].[Customer Dataset]
+	Where DATEDIFF(month, SubscriptionStart, SubscriptionEnd)
+	> 12;
+
+	
+---	calculate total revenue by subscription type---
+
+Select SubscriptionType,
+		sum(Revenue) as TotalRevenue
+		from [dbo].[Customer Dataset]
+		Group by SubscriptionType
+		Order by TotalRevenue desc
+
+----find the top 3 regions by subscription cancellations---
+
+Select Top 3 Region,
+		count(*) as SubscriptionCanceled
+		from [dbo].[Customer Dataset]
+		WHERE Canceled = 1
+		Group by Region
+		Order by SubscriptionCanceled desc
+
+Select Top 3 Region,
+		count(*) as SubscriptionCanceled
+		from [dbo].[Customer Dataset]
+		WHERE Canceled = 0
+		Group by Region
+		Order by SubscriptionCanceled desc
+
+---	find the total number of active and canceled subscriptions---
+
+		Select * from [dbo].[Customer Dataset]
+
+SELECT 
+    CASE 
+        WHEN Canceled = 1 THEN 'Canceled' 
+        ELSE 'Active' 
+    END AS SubscriptionStatus,
+    COUNT(*) AS TotalCount
+FROM [dbo].[Customer Dataset]
+GROUP BY 
+    CASE 
+        WHEN Canceled = 1 THEN 'Canceled' 
+        ELSE 'Active' 
+    END;
