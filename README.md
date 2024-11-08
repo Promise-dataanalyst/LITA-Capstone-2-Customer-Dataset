@@ -1,15 +1,49 @@
 # LITA-Capstone-2-Customer-Dataset
 
-# Project Title:
+## Project Title:
 
 ![Screenshot 1](https://github.com/user-attachments/assets/ab20bc88-c6e6-480e-9399-b394c00d9e56)
 
-# Project Description:
+### Project Description:
 ----
 - This project focuses on analyzing customer data for a subscription service to identify different segments and trends. 
 - The objective is to understand customer behavior, monitor subscription types, and recognize key trends related to cancellations and renewals. 
 - The final deliverable will be a Power BI dashboard that showcases the results of the analysis.
 - Additionally, Power BI dashboard is created to present each  findings of this analysis.
+
+### Dataset Overview:
+-----
+### Data Content:
+- Customer data from a subscription-based service contains information on customer subscriptions, durations, types, cancellations, and renewal data.
+
+### Insights to Extract:
+----
+**Data Source:** Customer data from a subscription-based service.  
+**Data Contents:** This data includes information on customer subscriptions, their durations, types, cancellation history, and renewal details.  
+
+**Insights to Extract:**  
+- Total customer count by region.
+- Analysis of the most popular subscription types and subscription durations.  
+- Customer segmentation based on subscription length and cancellation history.  
+- Revenue generated for each subscription type.  
+- Identification of regions with the highest cancellation rates.  
+
+**Tools Used and Steps Followed**
+----
+**Excel:**
+- Analyzed subscription patterns using pivot tables.
+- Calculated metrics related to subscription duration and identified popular subscription types.
+
+**SQL (SQL Server):**
+- Loaded the dataset for SQL querying.
+- Executed queries to segment customers, analyze subscription behaviors, and identify key trends, such as cancellations and long-term subscribers.
+
+**Power BI:**
+- Loaded and transformed data for analysis
+- Developed a dashboard to visualize customer segments, subscription trends, and cancellations.
+- Included slicers for interactive filtering of subscription data.
+
+### Create a dashboard that visualizes the insight found in Excel
 
 ### 1. Count of Customer IDs by Region
 ----
