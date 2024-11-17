@@ -45,7 +45,7 @@
 
 ### Create a dashboard that visualizes the insight found in Excel
 
-### 1. Count of Customer IDs by Region
+### 1. Customers by Region
 ----
 - This pie chart shows the number of customers in four regions: East, North, South, and West.  
 
@@ -54,20 +54,21 @@
 **Implications:** The equal customer distribution indicates a balanced market presence. 
 - This can help shape marketing strategies and ensure each region gets similar support.
 
-![Screenshot (107)](https://github.com/user-attachments/assets/f7383965-d896-42c6-91cc-9b68327609bf)
+![Capture 8](https://github.com/user-attachments/assets/00ef1217-2312-4424-97d4-24277e1ea1a8)
 
 
-### 2. Count of Customer IDs by Subscription Type 
+
+### 2. Customers by Subscription Type 
 ----
 - This bar chart shows the number of customers for each subscription type: Basic, Premium, and Standard.  
 
 **Key Insights:**  
-- Approximately **38K** customers have the **Basic subscription**, followed by about 19K for Standard and 8K for Premium.  
+- Approximately **38K** customers have the **Basic subscription**, followed by about 19K for Standard and 19K for Premium.  
 
 **Implications:**  
 - The Basic plan's popularity suggests customers prefer affordable options. To boost revenue, the company could try to upsell Basic customers to Standard or Premium plans by offering added value or incentives.
 
-![Screenshot (101)](https://github.com/user-attachments/assets/63c4e9f2-4184-4395-935b-b362f06f2fa1)
+![Capture 10](https://github.com/user-attachments/assets/a39f2978-7f69-4fd3-9a24-d4c56fb2125c)
 
 
 ### 3. Revenue by Year and Subscription Status
@@ -82,7 +83,7 @@
 ![Screenshot (102)](https://github.com/user-attachments/assets/eeeb62af-5af0-4c19-a8df-37a5ad720d8b)
 
 
-### 4. Customer ID Count by Region and Subscription Status**
+### 4. Customers Region and Subscription Status**
 ----
 This stacked bar chart illustrates the count of customers by region, categorized into Active and Non-Active statuses.
 
@@ -93,21 +94,24 @@ This stacked bar chart illustrates the count of customers by region, categorized
 
 - **Highest Non-Active Customers:** The North, South, and West regions each have around **8,000 non-active customers**.
 
-![Screenshot (103)](https://github.com/user-attachments/assets/eb292f3f-0aa5-4fe8-b429-5378e898598e)
+![Capture 11](https://github.com/user-attachments/assets/eca17ae6-9b46-4f3f-a675-1fdfd8e3acbe)
 
 
 
-### 5. Count of Customer IDs by Subscription Status and Year
+
+
+### 5. Customers by Subscription Status and Year
 ----
-This line chart shows the number of customers from 2022 to 2024, divided by their subscription status (Active or Non-Active).
+This line chart shows the number of customers from 2023 to 2024, divided by their subscription status (Active or Non-Active).
 
 **Key Insights:** 
-- Active customers hit a high of 26,000 in 2022, dropped to 15,000 in 2023, and then leveled off.
-- Non-active customers went up and down but showed a small increase in recent years.
+- Active customers hit a high of 26,000 in 2023, dropped to 15,000 in 2024, while
+- Non-active customers went up by 19,000 in 2023 and dropped by 15,000 in 2024.
 
 **Implications:** The drop in active customers highlights the need for better engagement and customer satisfaction. Continuous efforts are important to keep and grow the active customer base each year, possibly through better services or special offers.
 
-![Screenshot (104)](https://github.com/user-attachments/assets/335c3279-fa90-4c47-98d0-7220dd289a6b)
+![Capture 12](https://github.com/user-attachments/assets/afa340e4-f49c-4257-a3a7-b0ef2efb58a2)
+
 
 
 
